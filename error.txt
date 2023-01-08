@@ -1,0 +1,27 @@
+1st Bug
+Error : Compiled with problems:X
+
+ERROR in ./src/App.js 17:35-45
+
+export 'default' (imported as 'ComingSoon') was not found in './components/ComingSoon' (possible exports: comingSoon)
+
+Approach : 
+1. First Go to mentioned path './components/ComingSoon' 
+2. Checking codes and found that components (comingSoon) defined in lowercase and exported without default
+3. Found that App.js is importing comingSoon component in upperCase (ComingSoon)
+
+4. So I exported ComingSoon from component as default 
+
+2nd bug:
+
+I saw that time countdown is running negatively which should be positive.
+Approach : 
+1. I tried to find countdown component and I changed year from 2222 to 2023 so countdown run positively
+
+3. I am not sure is that a bug or I am not allowed to fetch this url, 
+Error : http://10.11.50.2:5000/sendemail net::ERR_CONNECTION_TIMED_OUT
+
+I used chrome console and debugger
+
+
+Thank you for giving me this chance.
